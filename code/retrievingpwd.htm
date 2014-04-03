@@ -1,0 +1,131 @@
+<TITLE>Untitled Document</TITLE>
+
+<script language="JavaScript">
+ function pv(ThisForm)
+  {
+     
+
+    if (ThisForm.textfield1.value == "")
+    {
+      alert("Please Enter Your \"Question no\".");
+      ThisForm.textfield1.focus();
+      return(false);
+    }
+}
+	 function cblur(ThisField)
+   {
+		cnt=0
+		var val=ThisField.value
+		len=val.length
+		if(len !=0)
+		{
+		  for(i=0;i<len;i++)
+		  {
+			c=val.substr(i,1)
+			if(c==" ") cnt++
+		  }
+		  if(cnt==len)
+		  {
+			ThisField.value=""
+			alert("Your Input Contains Only Space")
+			ThisField.focus();
+			return(false);
+		  }
+		}
+	  r=0
+ 
+	  //*******************************
+	  if((ThisField.name=="textfield1"))
+	  {
+		for(i=0;i<len;i++)
+		{
+		  c=val.substr(i,1)
+		  if((c<"0" ||c>"9") && (c!="-"))
+		  {
+			r=r+1
+		  }
+		}
+		if(r>0)
+		{
+		  alert("Enter Only \"NUMBERS\"!")
+		  ThisField.value= "";
+		  ThisField.focus();
+		  return(false);
+		}
+	  }
+}
+function foc()
+ {
+  document.forgot.codeedit.focus();
+ }
+</script>
+</HEAD>
+<BODY text=#000000 leftMargin=0 topMargin=0>
+<TABLE cellSpacing=0 cellPadding=0 width=780 border=0>
+  <TBODY>
+<form name="forgot" action="forgot.jsp" method="post" onsubmit="return pv(this)">
+  <TR>
+    <TD vAlign=top height=321>
+      <TABLE cellSpacing=0 cellPadding=0 width="790" border=0 height="258">
+        <TBODY>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="59">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>&nbsp;&nbsp;</b>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="24">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#6699CC" size="4"><b>Retrieving the Password&nbsp;</b></font>
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="25">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b> <font color="#800080">Enter Ur Login Id</font>&nbsp;&nbsp;&nbsp;&nbsp;
+            </b><input type="text" name="textfield1" Onblur='cblur(textfield1)' size="20" tabindex="1">
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="27">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <font face="Bookman Old Style" color="#4E0082">
+            <input type="submit" name="Submit" value="  Enter  " tabindex="2" style="font-weight: bold">
+            </font>
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="21">&nbsp;
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="21">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </TD>
+        </TR>
+        <TR>
+          <TD vAlign=top width=772 
+    bgColor=#ffffff height="18">&nbsp;
+          </TD>
+        </TR>
+        </TBODY></TABLE></TD></TR>
+</form>
+</TBODY></TABLE></BODY></HTML>

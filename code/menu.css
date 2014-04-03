@@ -1,0 +1,12 @@
+<style>
+<body>
+BODY {
+	FONT-SIZE: 20pt; FONT-FAMILY:Arial
+}
+A:visited {COLOR:blue; TEXT-DECORATION: none } 
+A:active {COLOR:blue; TEXT-DECORATION: none } 
+A:link {COLOR:blue; TEXT-DECORATION: none }
+A:hover {COLOR:red; TEXT-DECORATION: none font-size:10pt }
+
+  
+</style>
